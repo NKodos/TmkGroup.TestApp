@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ExceptionFilters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TmkGroup.TestApp.Client\TmkGroup.TestApp.Client.csproj" />
+    <ProjectReference Include="..\TmkGroup.TestApp.Tools\TmkGroup.TestApp.Tools.csproj" />
+  </ItemGroup>
+
+</Project>
